@@ -7,11 +7,20 @@
 //
 
 import UIKit
+import MyMathLib
 
 class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        let mUtility = MathUtility()
+        var res = mUtility.add(a: 10, b: 20)
+        res = mUtility.sub(a: 20, b: 10)
+        res = mUtility.mul(a: 20, b: 10)
+        res = mUtility.div(a: 20, b: 2)
+        
+        print(mUtility.pi)
+        
         // Do any additional setup after loading the view, typically from a nib.
     }
 
